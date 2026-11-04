@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://buymeacoffee.com/reactbd/e/548868"><img src="https://img.shields.io/badge/Get_the_full_source-%2449.99-E31C5F?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Get the full source for $49.99"></a>
+  <a href="https://buymeacoffee.com/reactbd/e/548868"><img src="https://img.shields.io/badge/Get_the_full_source-%2449.99-E31C5F?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Get the full source for $69.99"></a>
   <a href="https://staybnb.reactbd.com"><img src="https://img.shields.io/badge/Live_demo-staybnb.reactbd.com-222222?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo"></a>
   <a href="https://www.youtube.com/@reactjsbd"><img src="https://img.shields.io/badge/Watch_the_course-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch the course on YouTube"></a>
 </p>
@@ -29,7 +29,7 @@
 </p>
 
 > [!IMPORTANT]
-> **This kit holds the materials, not the app's code.** The course types every file with you. If you'd rather start from the finished, ready-to-deploy monorepo (storefront, admin dashboard and API), **[get the full Staybnb source for $49.99 →](https://buymeacoffee.com/reactbd/e/548868)**
+> **This kit holds the materials, not the app's code.** The course types every file with you. If you'd rather start from the finished, ready-to-deploy monorepo (storefront, admin dashboard and API), **[get the full Staybnb source for $69.99 →](https://buymeacoffee.com/reactbd/e/548868)**
 
 ## What you'll build
 
@@ -98,7 +98,7 @@ cp staybnb-starter-kit/env/apps/admin/.env.development.example   ~/code/staybnb/
 
 | | Full source | Done-for-you launch | Custom marketplace |
 | --- | :---: | :---: | :---: |
-| **Price** | **$49.99** one-time | **$399** | from **$999** |
+| **Price** | **$69.99** one-time | **$399** | from **$999** |
 | **What you get** | The complete Turborepo monorepo (web, admin, API), the Prisma schema, migrations and seed data, Stripe, uploads and OAuth ready to configure | Staybnb set up, configured and live on your domain: payments, env and deploy included | Features scoped to your business, built for you |
 | **You handle** | setup, config and hosting | nothing | the brief |
 | | **[Get the source →](https://buymeacoffee.com/reactbd/e/548868)** | [Book the launch →](https://buymeacoffee.com/reactbd/e/558771) | [Get in touch →](https://www.reactbd.com/contact) |
