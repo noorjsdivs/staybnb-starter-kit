@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#FF385C"/>
+  <!-- Doorway arch (same geometry as brand mark, inset for favicon clarity) -->
+  <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF"
+    d="M16 6.2C11.14 6.2 7.2 10.14 7.2 15v11.3h3.9V15a4.9 4.9 0 0 1 9.8 0v11.3h3.9V15c0-4.86-3.94-8.8-8.8-8.8Z"/>
+  <circle cx="16" cy="23.2" r="2.15" fill="#FFFFFF"/>
+</svg>

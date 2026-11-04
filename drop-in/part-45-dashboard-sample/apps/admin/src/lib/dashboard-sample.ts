@@ -1,0 +1,130 @@
+import type { AdminStats } from "@/pages/dashboard/DashboardPage";
+
+/**
+ * Sample data shown when the admin toggles "Use sample data" on the
+ * dashboard. Mirrors the real `/admin/stats` payload but with rich
+ * numbers so the layout reads well on a fresh / empty database.
+ */
+export const sampleAdminStats: AdminStats = {
+  counts: {
+    totalUsers: 50000,
+    totalHosts: 4876,
+    totalGuests: 45124,
+    totalListings: 4876,
+    publishedListings: 3920,
+    pendingListings: 156,
+    totalBookings: 1_000_000,
+    confirmedBookings: 543210,
+    pendingBookings: 9548,
+    cancelledBookings: 300,
+    totalReviews: 30482,
+    totalCategories: 24,
+    totalAmenities: 86,
+    totalBanners: 12,
+    totalHostingApplications: 4876,
+    pendingHostingApplications: 412,
+    lowInventoryListings: 4876,
+    paymentFailures: 4876,
+    refundedBookings: 3934,
+  },
+  revenue: { gross: 4876, currency: "USD" },
+  deltas: {
+    revenue30d: 12.4,
+    bookings30d: -0.1,
+    users30d: 2.1,
+  },
+  charts: {
+    revenueByMonth: [
+      { month: "2025-06", total: 28000 },
+      { month: "2025-07", total: 42000 },
+      { month: "2025-08", total: 22000 },
+      { month: "2025-09", total: 35000 },
+      { month: "2025-10", total: 30000 },
+      { month: "2025-11", total: 47000 },
+      { month: "2025-12", total: 60000 },
+      { month: "2026-01", total: 38000 },
+      { month: "2026-02", total: 25000 },
+      { month: "2026-03", total: 33000 },
+      { month: "2026-04", total: 28000 },
+      { month: "2026-05", total: 21000 },
+    ],
+    bookingStatusBreakdown: [
+      { status: "pending_request", count: 9548 },
+      { status: "pending_payment", count: 9423 },
+      { status: "confirmed", count: 24592 },
+      { status: "checked_in", count: 300 },
+      { status: "completed", count: 232 },
+      { status: "cancelled_by_guest", count: 403 },
+      { status: "cancelled_by_host", count: 594 },
+      { status: "refunded", count: 3934 },
+      { status: "rejected", count: 400 },
+    ],
+    topCountries: [
+      {
+        country: "United Kingdom",
+        listings: 1240,
+        total: 2_400_000,
+        monthly: [180, 200, 220, 210, 230, 250, 240, 260, 245, 230, 225, 215],
+      },
+      {
+        country: "South Korea",
+        listings: 980,
+        total: 200_000,
+        monthly: [120, 110, 100, 115, 125, 130, 122, 118, 130, 128, 119, 121],
+      },
+      {
+        country: "France",
+        listings: 870,
+        total: 300_000,
+        monthly: [150, 140, 160, 175, 190, 200, 195, 188, 175, 170, 165, 160],
+      },
+      {
+        country: "Germany",
+        listings: 760,
+        total: 480_000,
+        monthly: [200, 220, 245, 230, 250, 255, 260, 250, 240, 235, 230, 220],
+      },
+      {
+        country: "Italy",
+        listings: 540,
+        total: 180_000,
+        monthly: [110, 120, 135, 130, 140, 150, 148, 145, 138, 132, 128, 120],
+      },
+    ],
+  },
+  recent: {
+    bookings: Array.from({ length: 5 }, (_, i) => ({
+      id: `sample-b-${i}`,
+      bookingCode: `#254834`,
+      status: "pending_payment",
+      totalAmount: 40,
+      checkIn: "2027-09-12T00:00:00.000Z",
+      checkOut: "2027-09-14T00:00:00.000Z",
+      createdAt: "2027-09-12T00:00:00.000Z",
+      guest: {
+        id: `g-${i}`,
+        name: `Customer #${57392 + i}`,
+        email: `c${i}@staybnb.test`,
+      },
+      listing: {
+        id: `l-${i}`,
+        title: "Sample listing",
+        slug: "sample-listing",
+        city: "Riyadh",
+      },
+    })),
+    listings: Array.from({ length: 5 }, (_, i) => ({
+      id: `sample-l-${i}`,
+      slug: `sample-${i}`,
+      title: `Product Name`,
+      city: "Riyadh",
+      country: "Saudi Arabia",
+      status: "published",
+      basePrice: 40,
+      avgRating: 4.7,
+      images: [],
+      host: { id: `h-${i}`, name: "G-Shop" },
+      createdAt: "2026-01-01T00:00:00.000Z",
+    })),
+  },
+};
